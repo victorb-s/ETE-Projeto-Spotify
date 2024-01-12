@@ -1,0 +1,137 @@
+@font-face {
+    font-family: spotify-circular;
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Book.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Book.woff')
+        format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Book.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: spotify-circular;
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Bold.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Bold.woff')
+        format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: spotify-circular;
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Black.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Black.woff')
+        format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body, html{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0px;
+    display: block;
+}
+
+.logo{
+    height: 60px;
+    padding: 3px 0px 6px
+}
+
+header{
+    border-bottom: 1px solid rgb(217, 218, 220);
+    padding: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+header> a{
+    cursor: default;
+}
+
+.bodycontent{
+    flex: 3 1 0%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container{
+    max-width: 450px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.content-text{
+    box-sizing: border-box;
+
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: inherit;
+    font-weight: 900;
+    text-align: center;
+}
+
+.numero-input{
+    appearance: none;
+    background-image: none;
+    border: 0px;
+
+    display: block;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: #000000;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    padding: 14px;
+
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #878787;
+}
+
+.numero-input:hover{
+    box-shadow: inset 0 0 0 1px #000;
+}
+
+.botao{
+    margin-top: 16px;
+}
+
+.submit-button{
+    position: relative;
+    background-color: #17b950;
+    cursor: pointer;
+
+    color: #000000;
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+    border-radius: 500px;
+    padding: 16px 48px;
+    border: 0px;
+}
+
+.submit-button:hover{
+    background-color: #13e25c;
+}

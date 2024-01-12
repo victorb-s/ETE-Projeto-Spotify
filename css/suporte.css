@@ -1,0 +1,531 @@
+html, body, #home {
+	overflow-x: hidden;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Helvetica,Arial,sans-serif;;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(1,9,4);
+    background: linear-gradient(356deg, #121212 80%, rgba(3,22,10,1) 89%, rgba(7,50,22,1) 94%, rgba(12,85,38,1) 97%, rgba(17,119,53,1) 99%);
+    height: 300vh;
+}
+
+.navTransparent ul{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+    position: absolute;
+    left: 58%;
+    top: 4.5%;
+}
+
+#navLogo{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.navTransparent #divisor{
+    background-color: white;
+    height: 17px;
+    width: 1.5px;
+    margin: 1px;
+}
+
+
+.navTransparent a{
+    color: white;
+    text-decoration: none;
+    margin: 1em;
+    font-weight: 670;
+    font-size: 16px;
+}
+
+.navTransparent a:hover{
+    color: #1ed760;
+}
+
+.quickHelp{
+    background-color: #242424;
+    height: 80vh;
+    width: 100%;
+
+    position: absolute;
+    top: 135%;
+    
+}
+
+.quickHelp h1{
+    color: white;
+
+    position: absolute;
+    top: 7%;
+    left: 25%;
+}
+
+.help h2{
+    color: #a7a7a7;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    position: absolute;
+    top: 18%;
+    left: 26%;
+}
+
+.help h1{
+    color: white;
+    font-weight: 800;
+    font-size: 4.1em;
+    max-width: 600px;
+    line-height: 1.7em;
+    word-spacing: -.15em;
+
+    position: absolute;
+    top: 23%;
+    left: 25%;
+}
+
+.help a{
+    color: white;
+    font-weight: 600;
+    font-size: 23px;
+
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+.help h3{
+    color: #a7a7a7;
+    font-weight: 600;
+    font-size: 23px;
+
+    position: absolute;
+    top: 70%;
+    left: 35.4%;
+}
+
+.linkHelp a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.linkHelp li{
+    padding: 20px 0;
+}
+
+.linkHelp a:hover{
+    border-bottom: 1.5px solid #a7a7a7;
+}
+
+.linkHelp ul{
+    list-style-type: none;
+    position: absolute;
+    top: 19%;
+    left: 25%;
+}
+
+.input input{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+
+    width: 47%;
+    padding: 14px;
+    outline: none;
+}
+
+.input label{
+    position: absolute;
+    top: 82.3%;
+    left: 27%;
+
+    color: #727272;
+    border: 0px;
+}
+
+.input img{
+    position: absolute;
+    top: 82.2%;
+    left: 25%;
+}
+
+.categories{
+
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    
+    padding-top: 16px;
+    display: grid;
+    gap: 16px;
+    margin-bottom: 56px;
+    grid-template-columns: repeat(3, minmax(0px, 11.9em));
+
+    cursor: pointer;
+}
+
+.pagamentos{
+    height: 92px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(175, 40, 150);
+}
+
+.pagamentos p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.100em;
+    line-height: 1.5em;
+    padding: 10px 10px;
+}
+
+.pagamentos img{
+    height: 64px;
+    position: absolute;
+    top: 25px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+    right: calc(100% - 64px + 19px);
+    left: calc(100% - 64px + 19px);
+    transform: rotate(25deg);
+}
+
+.planos{
+    height: 92px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(140, 25, 50);
+}
+
+.planos p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.100em;
+    line-height: 1.5em;
+    max-width: 100px;
+    padding: 10px 10px;
+}
+
+.planos img{
+    height: 64px;
+    position: absolute;
+    top: 25px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+    right: calc(100% - 64px + 19px);
+    left: calc(100% - 64px + 19px);
+    transform: rotate(25deg);
+}
+
+.app{
+    height: 92px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(176, 98, 57);
+}
+
+.app p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.100em;
+    max-width: 100px;
+    line-height: 1.5em;
+    padding: 10px 10px;
+}
+
+.app img{
+    height: 64px;
+    position: absolute;
+    top: 25px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+    right: calc(100% - 64px + 19px);
+    left: calc(100% - 64px + 19px);
+    transform: rotate(25deg);
+}
+
+.dispositivos{
+    height: 92px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(0, 100, 80);
+}
+
+.dispositivos p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.100em;
+    line-height: 1.5em;
+    padding: 10px 10px;
+}
+
+.dispositivos img{
+    height: 64px;
+    position: absolute;
+    top: 25px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+    right: calc(100% - 64px + 19px);
+    left: calc(100% - 64px + 19px);
+    transform: rotate(25deg);
+}
+
+.segurança{
+height: 92px;
+border-radius: 4px;
+position: relative;
+overflow: hidden;
+background-color: rgb(117, 117, 117);
+}
+
+.segurança p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.100em;
+    line-height: 1.5em;
+    padding: 10px 10px;
+}
+
+.segurança img{
+    height: 64px;
+    position: absolute;
+    top: 25px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+    right: calc(100% - 64px + 19px);
+    left: calc(100% - 64px + 19px);
+    transform: rotate(25deg);
+}
+
+.conta{
+    height: 92px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(83, 122, 161);
+}
+
+.conta p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.100em;
+    max-width: 100px;
+    line-height: 1.5em;
+    padding: 10px 10px;
+}
+
+.conta img{
+    height: 64px;
+    position: absolute;
+    top: 25px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px 0px;
+    right: calc(100% - 64px + 19px);
+    left: calc(100% - 64px + 19px);
+    transform: rotate(25deg);
+}
+
+.community{
+    background-color: #121212;
+    height: 50vh;
+    width: 100%;
+
+    position: absolute;
+    top: 220%;
+}
+
+.community h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    word-spacing: -5px;
+    padding-bottom: 16px;
+
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.community h3{
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: 40%;
+    left: 24%;
+}
+
+.community button{
+    position: absolute;
+    top: 60%;
+    left: 34.5%;
+
+    padding: 1em 3em;
+    border-radius: 500px;
+    background-color: #1ed760;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.community button:hover{
+    transform: scale(1.04);
+}
+
+footer{
+    display: block;
+    background: black;
+    width: 100%;
+    height: 500px;
+    
+    position: absolute;
+    top: 280%;
+}
+
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #29f771;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer .mainLinks{
+    position: relative;
+    top: 80px;
+    left: 15%;
+}
+
+footer .company{
+    position: absolute;
+    left: 10%;
+}
+
+footer .mainLinks li{
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
+.mainLinks a{
+    text-decoration: none;
+}
+
+footer .communities{
+    position: absolute;
+    left: 20%;
+}
+
+footer .links{
+    position: absolute;
+    left: 35%;
+}
+
+footer .mainLinks h4{
+    cursor: default;
+    margin-bottom: 1.5em;
+}
+
+footer .social ul{
+    position: absolute;
+    left: 80%;
+    top: 55px;
+
+    display: inline-flex;
+    float: right;
+}
+
+footer .social li{
+    justify-content: space-between;
+    margin: .5em;
+}
+
+footer .social img{
+    width: 45px;
+}
+
+footer #footerLogo{
+    position: absolute;
+    top: 30px;
+    margin-left: 5em;
+}
+
+.legal ul{
+    display: inline-flex;
+    float: left;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 87%;
+    left: 3%;
+}
+
+.legal li{
+    margin-right: 3em;
+    color: #919496;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.legal li:hover{
+    color: #1ed760;
+    font-weight: 550;
+}
+
+.legal span{
+    color: #919496;
+    font-size: 11px;
+    font-weight: 670;
+
+    position: absolute;
+    top: 87%;
+    left: 90%;
+}
+
+.legal a{
+    text-decoration: none;
+
+    color: #919496;
+    font-size: 11.5px;
+    font-weight: 670;
+
+    position: absolute;
+    top: 81%;
+    left: 95%;
+}
+
+.legal a:hover{
+    color: #29f771;
+}

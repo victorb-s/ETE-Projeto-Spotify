@@ -1,0 +1,360 @@
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Helvetica,Arial,sans-serif;;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(25, 230, 140);
+}
+
+nav.transparent{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+
+#logo{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.navbar-collapse ul{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 55%;
+    top: 4.5%;
+}
+
+.navbar-collapse #divisor{
+    background-color: white;
+    height: 17px;
+    width: 1.5px;
+    margin: 1px;
+}
+
+.navbar-collapse li a{
+    font-weight: bolder;
+    color: white;
+    margin: 1.2rem;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.navbar-collapse li a:hover{
+    color: #1ed760;
+}
+
+
+.downloadContent #laptop{
+    position: absolute;
+    margin-bottom: 40px;
+    margin-top: 64px;
+    left: 44.5%;
+    top: 20%;
+}
+
+.downloadContent h1{
+    position: absolute;
+    top: 48%;
+    left: 37.5%;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+
+.downloadContent p{
+    position: absolute;
+    top: 60%;
+    left: 34%;
+}
+
+.downloadContent button{
+    position: absolute;
+    top: 68%;
+    left: 45%;
+
+    padding: 14px 32px;
+    border-radius: 500px;
+    border-color: transparent;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+
+    cursor: pointer;
+}
+
+.downloadContent button:hover{
+    transform: scale(1.04);
+    background-color: #eaeaea;
+}
+
+.plataforms{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 580px;
+}
+
+.plataforms h1{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    font-weight: 900;
+
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    padding: 0px 0px 0.75em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.25px;
+    line-height: 36px;
+}
+
+.plataforms p{
+    position: absolute;
+    top: 39%;
+    left: 32%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.devicesImages{
+    position: absolute;
+    top: 54%;
+    left: 33%;
+
+    cursor: pointer;
+}
+
+.devicesImages #microsoft{
+    position: absolute;
+    top: 15%;
+    margin-left: 5px;
+    width: 110px;
+}
+
+.allDevices{
+    background-color: rgb(34, 35, 38);
+    width: 100%;
+    height: 500px;
+
+    position: absolute;
+    top: 130%;
+}
+
+.allDevices h1{
+    color: white;
+
+    position: absolute;
+    top: 60%;
+    left: 16%;
+    margin-bottom: 2px;
+}
+
+.allDevices h3{
+    color: white;
+
+    position: absolute;
+    top: 70%;
+    left: 33%;
+}
+
+.allDevices img{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+
+    width: 480px;
+}
+
+.devices{
+    list-style-type: none;
+    display: inline-flex;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    
+    font-size: 16px;
+}
+
+
+.dot{
+    border: 2px solid rgb(29, 185, 84);
+    margin: 10px;
+}
+
+.devices span{
+    color: white;
+}
+
+.devices a{
+    color: #1ed760;
+}
+
+.devices a:hover{
+    color: #29f771;
+}
+
+footer{
+    display: block;
+    background: black;
+    width: 100%;
+    height: 500px;
+    
+    position: absolute;
+    top: 205%;
+}
+
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #29f771;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer .mainLinks{
+    position: relative;
+    top: 80px;
+    left: 15%;
+}
+
+footer .company{
+    position: absolute;
+    left: 10%;
+}
+
+footer .mainLinks li{
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
+.mainLinks a{
+    text-decoration: none;
+}
+
+footer .communities{
+    position: absolute;
+    left: 20%;
+}
+
+footer .links{
+    position: absolute;
+    left: 35%;
+}
+
+footer .mainLinks h4{
+    cursor: default;
+    margin-bottom: 1.5em;
+}
+
+footer .social ul{
+    position: absolute;
+    left: 80%;
+    top: 55px;
+
+    display: inline-flex;
+    float: right;
+}
+
+footer .social li{
+    justify-content: space-between;
+    margin: .5em;
+}
+
+footer .social img{
+    width: 45px;
+}
+
+footer #footerLogo{
+    position: absolute;
+    top: 30px;
+    margin-left: 5em;
+}
+
+.legal ul{
+    display: inline-flex;
+    float: left;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 87%;
+    left: 3%;
+}
+
+.legal li{
+    margin-right: 3em;
+    color: #919496;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.legal li:hover{
+    color: #1ed760;
+    font-weight: 550;
+}
+
+.legal span{
+    color: #919496;
+    font-size: 11px;
+    font-weight: 670;
+
+    position: absolute;
+    top: 87%;
+    left: 90%;
+}
+
+.legal a{
+    text-decoration: none;
+
+    color: #919496;
+    font-size: 11.5px;
+    font-weight: 670;
+
+    position: absolute;
+    top: 81%;
+    left: 95%;
+}
+
+.legal a:hover{
+    color: #29f771;
+}

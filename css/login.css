@@ -1,0 +1,345 @@
+@font-face {
+    font-family: spotify-circular;
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Book.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Book.woff')
+        format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Book.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: spotify-circular;
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Bold.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Bold.woff')
+        format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: spotify-circular;
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Black.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Black.woff')
+        format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    margin: 0px;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 60px;
+    padding: 3px 0px 6px
+}
+
+header{
+    border-bottom: 1px solid rgb(217, 218, 220);
+    padding: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+header> a{
+    cursor: default;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+
+.container-logins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px 0px;
+}
+
+.login{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.container-header>a{
+    cursor: default;
+}
+
+.facebook-login, .apple-login, .google-login, .numero-login{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+}
+
+.facebook-login-buttom{
+    width: 475px;
+    height: 3rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 24px;
+    position: relative;
+
+    background-color: #405A93;
+    color: #fff;
+    border-radius: 500px;
+    padding: 14px 32px;
+    transition-duration: 33ms;
+}
+
+.facebook-logo, .google-logo, .apple-logo{
+    padding-right: 16px;
+    padding-top: 5px;
+}
+
+.facebook-login-buttom:hover,
+.google-login-buttom:hover,
+.numero-login-buttom:hover,
+.apple-login-buttom:hover,
+.inscrever-login-buttom:hover{
+    box-shadow: inset 0 0 0 0.5px black;
+}
+
+.google-login-buttom,
+.numero-login-buttom,
+.inscrever-login-buttom{
+    width: 475px;
+    height: 3rem;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid rgb(129, 129, 129);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 24px;
+    position: relative;
+
+    background-color: transparent;
+    color: rgb(129, 129, 129);
+    border-radius: 500px;
+    padding: 14px 32px;
+    transition-duration: 33ms;
+}
+
+.apple-login-buttom{
+    width: 475px;
+    height: 3rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 24px;
+    position: relative;
+
+    background-color: #161616;
+    color: #fff;
+    border-radius: 500px;
+    padding: 14px 32px;
+    transition-duration: 33ms;
+}
+
+.divisor{
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0px auto 1em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+}
+
+.divisor::before, .divisor::after {
+    border-top: 1px solid rgb(204, 204, 204);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+
+.form-part{
+    padding-bottom: 12px;
+}
+
+form> .form-part> label, .nascimento{
+    box-sizing: border-box;
+    width: 100%;
+
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+form> .form-part> input:hover{
+    box-shadow: inset 0 0 0 1px #000;
+}
+
+form> .form-part> input{
+    border: 0px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    padding: 14px;
+
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #878787;
+    color: #000000;
+}
+
+.redifinir{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.redifinir:hover{
+    text-decoration: underline;
+    font-family: inherit;
+}
+
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.checkbox-box{
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+}
+
+.checkbox-label{
+    display: flex;
+    position: relative;
+}
+
+input:not(:checked) + label .checkbox-indicator{
+    border: 1px solid #878787;
+}
+
+input:checked + label .checkbox-indicator {
+    background-color: var(--essential-bright-accent,#169b45);
+    border-width: 0px;
+}
+
+input + label .checkbox-indicator{
+    background-color: #ffffff;
+}
+
+.checkbox-indicator{
+    box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    border-radius: 3px;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+}
+
+.checkbox-span{
+    position: relative;
+    top: -2px;
+    color: #000000;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-right: 24px;
+}
+
+.submit-button{
+    position: relative;
+    background-color: #1ed760;
+    cursor: pointer;
+
+    color: #000000;
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    border-radius: 500px;
+    padding: 16px 28px;
+    border: 0px;
+}
+
+.submit-button:hover{
+    background-color: #13e25c;
+    transform: scale(1.03);
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.container-footer> p{
+    font-size: 18px;
+    font-weight: 700;
+}
